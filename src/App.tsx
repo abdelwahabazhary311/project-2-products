@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import ProductCard from './Components/ProductCard'
 import Modal from './Components/ui/Modal'
-import { productList } from './data'
+import { formInputList, productList } from './data'
 import Button from "../src/Components/ui/Button"
+import Inputs from './Components/ui/Inputs'
 
 const App = () => {
     let [isOpen, setIsOpen] = useState(false)
@@ -15,6 +16,10 @@ const App = () => {
       setIsOpen(false)
     }
   const renderProductList = productList.map(product=><ProductCard product={product} key={product.id}/>)
+  const renderFormInputList= formInputList.map(input => <div className='flex flex-col'>
+    <label htmlFor={input.id} className='text-sm mb-2 '>{input.label}</label>
+    <Inputs name={input.name} type='text' id={input.id} />
+  </div>)
   return (
     <main className='max-w-7xl mx-auto px-6 py-10'>
       <Button width='w-fit' className=" text-white bg-indigo-700  " onClick={open}>SUBMIT</Button>
@@ -24,10 +29,16 @@ const App = () => {
       {renderProductList}
     </div>
     <Modal isOpen={isOpen} close={close} title='Add a new product'>
-      <div className='flex items-center space-x-3'>
-        <Button className=" text-white bg-indigo-700  ">SUBMIT</Button>
-        <Button className=" text-white bg-gray-300  " onClick={close}>CANCEL</Button>
+      <form className='space-y-3'>
+        {renderFormInputList}
+
+         <div className='flex items-center space-x-3'>
+        <Button className=" text-white bg-indigo-700 hover:bg-indigo-500 transition-all  ">SUBMIT</Button>
+        <Button className=" text-white bg-gray-400 hover:bg-gray-500 transition-all  " onClick={close}>CANCEL</Button>
       </div>
+      </form>
+      
+     
     </Modal>
     </main>
     

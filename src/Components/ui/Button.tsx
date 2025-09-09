@@ -8,7 +8,7 @@ width?:'w-fit'|  'w-full'
 const Button = ({children , className, width = "w-full" , ...rest}:Iprops) => {
   return (
     
-        <button className={`${className} ${width} rounded-md  p-2 cursor-pointer `} {...rest}>{children}</button>
+     <button className={`${className} ${width} rounded-md  p-2 cursor-pointer  `} {...rest}>{children}</button>
     
   )
 }
