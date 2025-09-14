@@ -1,5 +1,5 @@
 import { v4 as uuid } from "uuid";
-import type { IFormInput, IProduct } from "../interfaces";
+import type { ICategory, IFormInput, IProduct } from "../interfaces";
 
 
 export const productList: IProduct[] = [
@@ -23,7 +23,7 @@ export const productList: IProduct[] = [
       "#1F8A70",
       "#84D2C5",
     ],
-    categoury: {
+    category: {
       name: "Nike",
       imageURL:
         "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
@@ -38,7 +38,7 @@ export const productList: IProduct[] = [
       "https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     price: "500000",
     colors: ["#FF0032", "#2563eb", "#FF6E31"],
-    categoury: {
+    category: {
       name: "Cars",
       imageURL:
         "https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
@@ -53,7 +53,7 @@ export const productList: IProduct[] = [
       "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     price: "120000",
     colors: ["#A31ACB", "#3C2A21", "#1F8A70", "#820000", "#FF0032"],
-    categoury: {
+    category: {
       name: "Cars",
       imageURL:
         "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
@@ -68,7 +68,7 @@ export const productList: IProduct[] = [
       "https://images.unsplash.com/photo-1552831388-6a0b3575b32a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80",
     price: "1500",
     colors: [],
-    categoury: {
+    category: {
       name: "PC Desktop",
       imageURL:
         "https://images.unsplash.com/photo-1552831388-6a0b3575b32a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80",
@@ -94,7 +94,7 @@ export const productList: IProduct[] = [
       "#1F8A70",
       "#84D2C5",
     ],
-    categoury: {
+    category: {
       name: "Nike",
       imageURL:
         "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
@@ -109,7 +109,7 @@ export const productList: IProduct[] = [
       "https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     price: "500000",
     colors: ["#FF0032", "#2563eb", "#FF6E31"],
-    categoury: {
+    category: {
       name: "Cars",
       imageURL:
         "https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
@@ -124,7 +124,7 @@ export const productList: IProduct[] = [
       "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     price: "120000",
     colors: ["#A31ACB", "#3C2A21", "#1F8A70", "#820000", "#FF0032"],
-    categoury: {
+    category: {
       name: "Cars",
       imageURL:
         "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
@@ -139,7 +139,7 @@ export const productList: IProduct[] = [
       "https://images.unsplash.com/photo-1552831388-6a0b3575b32a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80",
     price: "1500",
     colors: [],
-    categoury: {
+    category: {
       name: "PC Desktop",
       imageURL:
         "https://images.unsplash.com/photo-1552831388-6a0b3575b32a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80",
@@ -177,3 +177,63 @@ export const formInputList:IFormInput[] = [
 
 
 
+export const colors:string[] =[
+      "#A31ACB",
+      "#FF6E31",
+      "#3C2A21",
+      "#CB1C8D",
+      "#645CBB",
+      "#FF0032",
+      "#820000",
+      "#13005A",
+      "#1F8A70",
+      "#84D2C5",
+]
+
+
+export const categories:ICategory[] =[
+   {  
+      id:'1',
+      name: "PC Desktop",
+      imageURL:
+        "https://images.unsplash.com/photo-1552831388-6a0b3575b32a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80",
+    },
+    {
+      id:'2',
+      name: "Nike",
+      imageURL:
+        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    },
+    {
+      id:'3',
+      name: "Cars",
+      imageURL:
+        "https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    },
+    {
+      id:'4',
+      name: "Cars",
+      imageURL:
+        "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    },
+     {
+      id:'5',
+      name: "PC Desktop",
+      imageURL:
+        "https://images.unsplash.com/photo-1552831388-6a0b3575b32a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80",
+    },
+
+     {
+      id:'6',
+      name: "PC Desktop",
+      imageURL:
+        "https://images.unsplash.com/photo-1552831388-6a0b3575b32a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80",
+    },
+
+    {
+      id:'7',
+      name: "Cars",
+      imageURL:
+        "https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    },
+]

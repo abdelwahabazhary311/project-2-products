@@ -11,8 +11,11 @@
   },
   "dependencies": {
     "@headlessui/react": "^2.2.7",
+    "@heroicons/react": "^2.2.0",
+    "@heroicons/vue": "^2.2.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "react-hot-toast": "^2.6.0",
     "tailwindcss": "^4.1.13",
     "uuid": "^11.1.0"
   },

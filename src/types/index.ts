@@ -1,0 +1,1 @@
+export type productNameTypes = 'title' | 'description' | 'imageURL'  |'price'

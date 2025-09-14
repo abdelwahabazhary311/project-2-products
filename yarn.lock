@@ -286,6 +286,16 @@
     "@tanstack/react-virtual" "^3.13.9"
     use-sync-external-store "^1.5.0"
 
+"@heroicons/react@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.npmjs.org/@heroicons/react/-/react-2.2.0.tgz"
+  integrity sha512-LMcepvRaS9LYHJGsF0zzmgKCUim/X3N/DQKc4jepAXJ7l8QxJ1PmxJzqplF2Z3FE4PqBAIGyJAQ/w4B5dsqbtQ==
+
+"@heroicons/vue@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.npmjs.org/@heroicons/vue/-/vue-2.2.0.tgz"
+  integrity sha512-G3dbSxoeEKqbi/DFalhRxJU4mTXJn7GwZ7ae8NuEQzd1bqdd0jAbdaBZlHPcvPD2xI1iGzNVB4k20Un2AguYPw==
+
 "@humanfs/core@^0.19.1":
   version "0.19.1"
   resolved "https://registry.npmjs.org/@humanfs/core/-/core-0.19.1.tgz"
@@ -740,6 +750,86 @@
     "@types/babel__core" "^7.20.5"
     react-refresh "^0.17.0"
 
+"@vue/compiler-core@3.5.21":
+  version "3.5.21"
+  resolved "https://registry.npmjs.org/@vue/compiler-core/-/compiler-core-3.5.21.tgz"
+  integrity sha512-8i+LZ0vf6ZgII5Z9XmUvrCyEzocvWT+TeR2VBUVlzIH6Tyv57E20mPZ1bCS+tbejgUgmjrEh7q/0F0bibskAmw==
+  dependencies:
+    "@babel/parser" "^7.28.3"
+    "@vue/shared" "3.5.21"
+    entities "^4.5.0"
+    estree-walker "^2.0.2"
+    source-map-js "^1.2.1"
+
+"@vue/compiler-dom@3.5.21":
+  version "3.5.21"
+  resolved "https://registry.npmjs.org/@vue/compiler-dom/-/compiler-dom-3.5.21.tgz"
+  integrity sha512-jNtbu/u97wiyEBJlJ9kmdw7tAr5Vy0Aj5CgQmo+6pxWNQhXZDPsRr1UWPN4v3Zf82s2H3kF51IbzZ4jMWAgPlQ==
+  dependencies:
+    "@vue/compiler-core" "3.5.21"
+    "@vue/shared" "3.5.21"
+
+"@vue/compiler-sfc@3.5.21":
+  version "3.5.21"
+  resolved "https://registry.npmjs.org/@vue/compiler-sfc/-/compiler-sfc-3.5.21.tgz"
+  integrity sha512-SXlyk6I5eUGBd2v8Ie7tF6ADHE9kCR6mBEuPyH1nUZ0h6Xx6nZI29i12sJKQmzbDyr2tUHMhhTt51Z6blbkTTQ==
+  dependencies:
+    "@babel/parser" "^7.28.3"
+    "@vue/compiler-core" "3.5.21"
+    "@vue/compiler-dom" "3.5.21"
+    "@vue/compiler-ssr" "3.5.21"
+    "@vue/shared" "3.5.21"
+    estree-walker "^2.0.2"
+    magic-string "^0.30.18"
+    postcss "^8.5.6"
+    source-map-js "^1.2.1"
+
+"@vue/compiler-ssr@3.5.21":
+  version "3.5.21"
+  resolved "https://registry.npmjs.org/@vue/compiler-ssr/-/compiler-ssr-3.5.21.tgz"
+  integrity sha512-vKQ5olH5edFZdf5ZrlEgSO1j1DMA4u23TVK5XR1uMhvwnYvVdDF0nHXJUblL/GvzlShQbjhZZ2uvYmDlAbgo9w==
+  dependencies:
+    "@vue/compiler-dom" "3.5.21"
+    "@vue/shared" "3.5.21"
+
+"@vue/reactivity@3.5.21":
+  version "3.5.21"
+  resolved "https://registry.npmjs.org/@vue/reactivity/-/reactivity-3.5.21.tgz"
+  integrity sha512-3ah7sa+Cwr9iiYEERt9JfZKPw4A2UlbY8RbbnH2mGCE8NwHkhmlZt2VsH0oDA3P08X3jJd29ohBDtX+TbD9AsA==
+  dependencies:
+    "@vue/shared" "3.5.21"
+
+"@vue/runtime-core@3.5.21":
+  version "3.5.21"
+  resolved "https://registry.npmjs.org/@vue/runtime-core/-/runtime-core-3.5.21.tgz"
+  integrity sha512-+DplQlRS4MXfIf9gfD1BOJpk5RSyGgGXD/R+cumhe8jdjUcq/qlxDawQlSI8hCKupBlvM+3eS1se5xW+SuNAwA==
+  dependencies:
+    "@vue/reactivity" "3.5.21"
+    "@vue/shared" "3.5.21"
+
+"@vue/runtime-dom@3.5.21":
+  version "3.5.21"
+  resolved "https://registry.npmjs.org/@vue/runtime-dom/-/runtime-dom-3.5.21.tgz"
+  integrity sha512-3M2DZsOFwM5qI15wrMmNF5RJe1+ARijt2HM3TbzBbPSuBHOQpoidE+Pa+XEaVN+czbHf81ETRoG1ltztP2em8w==
+  dependencies:
+    "@vue/reactivity" "3.5.21"
+    "@vue/runtime-core" "3.5.21"
+    "@vue/shared" "3.5.21"
+    csstype "^3.1.3"
+
+"@vue/server-renderer@3.5.21":
+  version "3.5.21"
+  resolved "https://registry.npmjs.org/@vue/server-renderer/-/server-renderer-3.5.21.tgz"
+  integrity sha512-qr8AqgD3DJPJcGvLcJKQo2tAc8OnXRcfxhOJCPF+fcfn5bBGz7VCcO7t+qETOPxpWK1mgysXvVT/j+xWaHeMWA==
+  dependencies:
+    "@vue/compiler-ssr" "3.5.21"
+    "@vue/shared" "3.5.21"
+
+"@vue/shared@3.5.21":
+  version "3.5.21"
+  resolved "https://registry.npmjs.org/@vue/shared/-/shared-3.5.21.tgz"
+  integrity sha512-+2k1EQpnYuVuu3N7atWyG3/xoFWIVJZq4Mz8XNOdScFI0etES75fbny/oU4lKWk/577P1zmg0ioYvpGEDZ3DLw==
+
 acorn-jsx@^5.3.2:
   version "5.3.2"
   resolved "https://registry.npmjs.org/acorn-jsx/-/acorn-jsx-5.3.2.tgz"
@@ -868,7 +958,7 @@ cross-spawn@^7.0.6:
     shebang-command "^2.0.0"
     which "^2.0.1"
 
-csstype@^3.0.2:
+csstype@^3.0.10, csstype@^3.0.2, csstype@^3.1.3:
   version "3.1.3"
   resolved "https://registry.npmjs.org/csstype/-/csstype-3.1.3.tgz"
   integrity sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==
@@ -902,6 +992,11 @@ enhanced-resolve@^5.18.3:
   dependencies:
     graceful-fs "^4.2.4"
     tapable "^2.2.0"
+
+entities@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.npmjs.org/entities/-/entities-4.5.0.tgz"
+  integrity sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw==
 
 esbuild@^0.25.0:
   version "0.25.9"
@@ -1042,6 +1137,11 @@ estraverse@^5.1.0, estraverse@^5.2.0:
   resolved "https://registry.npmjs.org/estraverse/-/estraverse-5.3.0.tgz"
   integrity sha512-MMdARuVEQziNTeJD8DgMqmhwR11BRQ/cBP+pLtYdSTnf3MIO8fFeiINEbX36ZdNlfU/7A9f3gUw49B3oQsvwBA==
 
+estree-walker@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/estree-walker/-/estree-walker-2.0.2.tgz"
+  integrity sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==
+
 esutils@^2.0.2:
   version "2.0.3"
   resolved "https://registry.npmjs.org/esutils/-/esutils-2.0.3.tgz"
@@ -1153,6 +1253,11 @@ globals@^16.3.0:
   version "16.3.0"
   resolved "https://registry.npmjs.org/globals/-/globals-16.3.0.tgz"
   integrity sha512-bqWEnJ1Nt3neqx2q5SFfGS8r/ahumIakg3HcwtNlrVlwXIeNumWn/c7Pn/wKzGhf6SaW6H6uWXLqC30STCMchQ==
+
+goober@^2.1.16:
+  version "2.1.16"
+  resolved "https://registry.npmjs.org/goober/-/goober-2.1.16.tgz"
+  integrity sha512-erjk19y1U33+XAMe1VTvIONHYoSqE4iS7BYUZfHaqeohLmnC0FdxEh7rQU+6MZ4OajItzjZFSRtVANrQwNq6/g==
 
 graceful-fs@^4.2.4:
   version "4.2.11"
@@ -1511,19 +1616,27 @@ queue-microtask@^1.2.2:
   resolved "https://registry.npmjs.org/queue-microtask/-/queue-microtask-1.2.3.tgz"
   integrity sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==
 
-"react-dom@^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0", "react-dom@^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0-rc.1", "react-dom@^18 || ^19 || ^19.0.0-rc", react-dom@^19.1.1, react-dom@>=16.8.0:
+"react-dom@^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0", "react-dom@^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0-rc.1", "react-dom@^18 || ^19 || ^19.0.0-rc", react-dom@^19.1.1, react-dom@>=16, react-dom@>=16.8.0:
   version "19.1.1"
   resolved "https://registry.npmjs.org/react-dom/-/react-dom-19.1.1.tgz"
   integrity sha512-Dlq/5LAZgF0Gaz6yiqZCf6VCcZs1ghAJyrsu84Q/GT0gV+mCxbfmKNoGRKBYMJ8IEdGPqu49YWXD02GCknEDkw==
   dependencies:
     scheduler "^0.26.0"
 
+react-hot-toast@^2.6.0:
+  version "2.6.0"
+  resolved "https://registry.npmjs.org/react-hot-toast/-/react-hot-toast-2.6.0.tgz"
+  integrity sha512-bH+2EBMZ4sdyou/DPrfgIouFpcRLCJ+HoCA32UoAYHn6T3Ur5yfcDCeSr5mwldl6pFOsiocmrXMuoCJ1vV8bWg==
+  dependencies:
+    csstype "^3.1.3"
+    goober "^2.1.16"
+
 react-refresh@^0.17.0:
   version "0.17.0"
   resolved "https://registry.npmjs.org/react-refresh/-/react-refresh-0.17.0.tgz"
   integrity sha512-z6F7K9bV85EfseRCp2bzrpyQ0Gkw1uLoCel9XBVWPg/TjRj94SkJzUTGfOa4bs7iJvBWtQG0Wq7wnI0syw3EBQ==
 
-"react@^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0", "react@^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0-rc.1", "react@^18 || ^19 || ^19.0.0-rc", react@^19.1.1, react@>=16.8.0:
+"react@^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0", "react@^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0-rc.1", "react@^18 || ^19 || ^19.0.0-rc", react@^19.1.1, "react@>= 16 || ^19.0.0-rc", react@>=16, react@>=16.8.0:
   version "19.1.1"
   resolved "https://registry.npmjs.org/react/-/react-19.1.1.tgz"
   integrity sha512-w8nqGImo45dmMIfljjMwOGtbmC/mk4CMYhWIicdSflH91J9TyCyczcPFXJzrZ/ZXcgGRFeP6BU0BEJTw6tZdfQ==
@@ -1687,7 +1800,7 @@ typescript-eslint@^8.39.1:
     "@typescript-eslint/typescript-estree" "8.41.0"
     "@typescript-eslint/utils" "8.41.0"
 
-typescript@>=4.8.4, "typescript@>=4.8.4 <6.0.0", typescript@~5.8.3:
+typescript@*, typescript@>=4.8.4, "typescript@>=4.8.4 <6.0.0", typescript@~5.8.3:
   version "5.8.3"
   resolved "https://registry.npmjs.org/typescript/-/typescript-5.8.3.tgz"
   integrity sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==
@@ -1730,6 +1843,17 @@ uuid@^11.1.0:
     tinyglobby "^0.2.14"
   optionalDependencies:
     fsevents "~2.3.3"
+
+"vue@>= 3", vue@3.5.21:
+  version "3.5.21"
+  resolved "https://registry.npmjs.org/vue/-/vue-3.5.21.tgz"
+  integrity sha512-xxf9rum9KtOdwdRkiApWL+9hZEMWE90FHh8yS1+KJAiWYh+iGWV1FquPjoO9VUHQ+VIhsCXNNyZ5Sf4++RVZBA==
+  dependencies:
+    "@vue/compiler-dom" "3.5.21"
+    "@vue/compiler-sfc" "3.5.21"
+    "@vue/runtime-dom" "3.5.21"
+    "@vue/server-renderer" "3.5.21"
+    "@vue/shared" "3.5.21"
 
 which@^2.0.1:
   version "2.0.2"
