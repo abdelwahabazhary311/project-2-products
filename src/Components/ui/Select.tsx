@@ -1,6 +1,5 @@
 import { Listbox, Transition } from "@headlessui/react";
 import { CheckIcon, ChevronUpDownIcon } from "@heroicons/react/20/solid";
-import { Fragment } from "react";
 import { categories } from "../../data";
 import type { ICategory } from "../../interfaces";
 

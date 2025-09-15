@@ -19,7 +19,6 @@ const App = () => {
       imageURL:'',
       price:'',
       colors:[],
-      // category:categories[0]
       category:{
         name:'',
         imageURL:''
@@ -39,7 +38,6 @@ const App = () => {
 
    
     
-  // console.log(tempColor);
   
       /**______________Handler__________ */
 
@@ -85,14 +83,11 @@ const App = () => {
     const errors = productValidation({title:product.title ,description:product.description
       , imageURL:product.imageURL , price:product.price,
     })
-    // console.log(errors);
-
-    // const hasErrorMessage = Object.values(errors).some(value => value !== '');
+    
 
     const hasErrorMessage = 
     Object.values(errors).some(value => value == '') && Object.values(errors).every(value => value=='');
 
-    // console.log(hasErrorMessage);
     if(!hasErrorMessage){
       setErrors(errors)
       return;
@@ -132,7 +127,6 @@ const App = () => {
 
 
   const onCancel = ()=>{
-    console.log("cancel"); 
     setProduct(defaultProductOpj)
     close()
   }

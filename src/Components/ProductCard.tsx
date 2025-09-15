@@ -3,7 +3,6 @@
 
 import Image from "./Image"
 import Button from "./ui/Button"
-import { productList } from "../data"
 import type { IProduct } from "../interfaces"
 import { txtSlicer } from "../utils/functions"
 import ProductColors from "./ProductColors"
